@@ -4,9 +4,7 @@ This repository contains a small-scale implementation of a language model built 
 
 ## Key Learnings and Challenges
 
-- **Custom Tokenizer**: Creating a tokenizer from scratch tailored to the dataset (`wiki.txt`) helped me understand the importance of preprocessing and efficient tokenization in language models. One challenge I faced was ensuring that domain-specific terms were handled effectively, which I resolved by fine-tuning tokenizer parameters.
-
-- **Model Architecture and Training**: Implementing multi-head attention and transformers was a pivotal learning experience. I wrote the building blocks , including Attention mechanism, feedforward layers, using PyTorch. Training was conducted on an NVIDIA GeForce RTX 3080 Ti GPU. While the hardware facilitated faster iterations, limitations in computational power highlighted the importance of resource-efficient model scaling for larger datasets and parameters.
+- **Model Architecture and Training**: Implementing multi-head attention and transformers was a pivotal learning experience. I wrote the building blocks , including Attention mechanism, feedforward layers, using PyTorch. Training was conducted on an NVIDIA GeForce RTX 3080 Ti GPU. While the hardware facilitated faster iterations, limitations in computational power highlighted the importance of resource-efficient model scaling for larger datasets and parameters. Also used custom tokenizer to handle domain-specific terms effectively.
 
 - **Loss Function and Monitoring**: CrossEntropy loss was used to measure training and validation performance. Incorporating Weights & Biases allowed me to monitor progress visually and adapt hyperparameters when necessary. Despite achieving stable training, the small model size limited its capability to generate coherent and meaningful text consistently.
 
